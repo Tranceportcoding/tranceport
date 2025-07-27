@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  line-height: 1.5;
+  background: #1e202b;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #009ad8;
+}
+
+hr {
+  border: dotted #009ad8 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 3rem auto;
+}
+
+/* NAVBAR */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.bi-three-dots {
+  color: #009ad8;
+}
+
+.navbar h4 {
+  color: #009ad8;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.navbar ul li a:hover {
+  color: #009ad8;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar ul li a {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar ul li a {
+    text-align: center;
+  }
+}
+
+/* HERO */
+#hero {
+padding: 4% 0;
+background-color: #00238c;
+background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#hero img {
+  border-radius: 100%;
+  border: 5px solid #009ad8; 
+}
+
+#hero h1 {
+  color: #00d82b;
+}
+
+/* ABOUT */
+#about {
+  padding: 0 20%;
+}
+
+/* CONTACT */
+
+form input,
+form textarea,
+form select {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.contact-form [class*="col"] {
+  padding: 0 5px;
+}
+
+.contact-form .row {
+  margin: 0 -5px;
+}
+
+.contact-form input:not([type="submit"]),
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: white;
+  border: 2px solid #393c48;
+  border-color: #009ad8;
+  background: transparent;
+}
+
+.button,
+form input[type="submit"],
+form button,
+form input[type="reset"] {
+  border: none;
+  background: #009ad8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+.contact-form input:not([type="submit"]):hover,
+.contact-form input:not([type="submit"]):focus,
+.contact-form textarea:hover,
+.contact-form textarea:focus {
+  border-color: #6fcff5;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+}
+
+.contact-form .text-right {
+  text-align: right;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+}
+
+.footer .social-logo {
+  font-size: 2rem;
+  color: #009ad8;
+}
+
+.footer .social-logo:hover {
+  color: #6fcff5;
+}
+
+/* SUCCESS */
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
